@@ -1,4 +1,6 @@
 package com.vytrack.test.homework;
 
-public class TestCase_1 {
+import com.vytrack.test.TestBase;
+
+public class TestCase_1 extends TestBase {
 }
