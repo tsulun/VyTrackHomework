@@ -14,4 +14,16 @@ public class CalendarEventsPage extends BasePage {
     @FindBy(css = "[title='Create Calendar event']")
     public WebElement createCalendarEvent;
 
+    @FindBy(xpath = "//li/input[@type='number']")
+    public WebElement pageNumberInput;
+
+
+    /**
+     * @return page number, for example: 1
+     */
+    public String getPageNumber(){
+        waitUntilLoaderScreenDisappear();
+       return pageNumberInput.getText();
+    }
+
 }

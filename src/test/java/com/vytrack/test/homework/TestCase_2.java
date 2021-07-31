@@ -17,8 +17,5 @@ public class TestCase_2 extends TestBase {
         DashboardPage dashboardPage = new DashboardPage();
         dashboardPage.navigateToModule("Activities","Calendar Events");
 
-
-
-
     }
 }
