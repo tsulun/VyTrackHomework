@@ -29,7 +29,7 @@ public class CalendarEventsPage extends BasePage {
      */
     public String getPageNumber(){
         waitUntilLoaderScreenDisappear();
-       return pageNumberInput.getText();
+       return pageNumberInput.getAttribute("value");
     }
 
 }
