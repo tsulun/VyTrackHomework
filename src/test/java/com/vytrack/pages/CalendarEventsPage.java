@@ -20,4 +20,16 @@ public class CalendarEventsPage extends BasePage {
     @FindBy(xpath = "//button/input[1]")
     public WebElement topCheckBox;
 
+    @FindBy(xpath = "//li/input[@type='number']")
+    public WebElement pageNumberInput;
+
+
+    /**
+     * @return page number, for example: 1
+     */
+    public String getPageNumber(){
+        waitUntilLoaderScreenDisappear();
+       return pageNumberInput.getText();
+    }
+
 }
