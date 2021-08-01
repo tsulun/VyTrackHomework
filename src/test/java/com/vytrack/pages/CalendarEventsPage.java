@@ -14,4 +14,10 @@ public class CalendarEventsPage extends BasePage {
     @FindBy(css = "[title='Create Calendar event']")
     public WebElement createCalendarEvent;
 
+    @FindBy(xpath = "//input[@tabindex='-1']")
+    public WebElement checkboxes;
+
+    @FindBy(xpath = "//button/input[1]")
+    public WebElement topCheckBox;
+
 }
