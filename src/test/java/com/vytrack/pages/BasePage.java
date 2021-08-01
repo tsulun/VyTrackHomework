@@ -29,11 +29,20 @@ public abstract class BasePage {
     @FindBy(linkText = "My User")
     public WebElement myUser;
 
+    @FindBy(xpath ="/html/body/div[2]/div[2]/div[1]/div[2]/div[3]/div[3]/div[2]/div[1]/div/div[3]/div[2]/div/div/button")
+    public WebElement pageNumber;
+
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
 
 
+
+    public String getPageNum(){
+        waitUntilLoaderScreenDisappear();
+        return pageNumber.getText();
+
+    }
     /**
      * @return page name, for example: Dashboard
      */
