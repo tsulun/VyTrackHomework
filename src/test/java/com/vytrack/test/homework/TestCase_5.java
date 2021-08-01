@@ -1,5 +1,6 @@
 package com.vytrack.test.homework;
 
+import com.vytrack.pages.DashboardPage;
 import com.vytrack.pages.LoginPage;
 import com.vytrack.test.TestBase;
 import org.testng.annotations.Test;
@@ -12,6 +13,9 @@ public class TestCase_5 extends TestBase {
         LoginPage loginPage = new LoginPage();
 
         loginPage.loginAsAStoreManager();
+
+        DashboardPage dashboardPage = new DashboardPage();
+        dashboardPage.navigateToModule("Activities","Calender Events");
 
 
     }
